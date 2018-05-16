@@ -100,6 +100,7 @@ int main(int argc, char* argv[])
                         }
                         else
                         {
+                            // Нужно переделать отправку сбщ второму клиенту
                             while (queue >0)
                             {
                                 if ((send(fds[numfd].fd, buffer[--queue], RCVBUFSIZE,0)) <0)
